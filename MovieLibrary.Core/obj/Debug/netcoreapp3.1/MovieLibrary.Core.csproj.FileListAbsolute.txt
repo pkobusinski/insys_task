@@ -1,0 +1,13 @@
+D:\insys_task\src\MovieLibrary.Core\bin\Debug\netcoreapp3.1\MovieLibrary.Core.deps.json
+D:\insys_task\src\MovieLibrary.Core\bin\Debug\netcoreapp3.1\MovieLibrary.Core.dll
+D:\insys_task\src\MovieLibrary.Core\bin\Debug\netcoreapp3.1\MovieLibrary.Core.pdb
+D:\insys_task\src\MovieLibrary.Core\bin\Debug\netcoreapp3.1\MovieLibrary.Data.dll
+D:\insys_task\src\MovieLibrary.Core\bin\Debug\netcoreapp3.1\MovieLibrary.Data.pdb
+D:\insys_task\src\MovieLibrary.Core\obj\Debug\netcoreapp3.1\MovieLibrary.Core.csproj.AssemblyReference.cache
+D:\insys_task\src\MovieLibrary.Core\obj\Debug\netcoreapp3.1\MovieLibrary.Core.GeneratedMSBuildEditorConfig.editorconfig
+D:\insys_task\src\MovieLibrary.Core\obj\Debug\netcoreapp3.1\MovieLibrary.Core.AssemblyInfoInputs.cache
+D:\insys_task\src\MovieLibrary.Core\obj\Debug\netcoreapp3.1\MovieLibrary.Core.AssemblyInfo.cs
+D:\insys_task\src\MovieLibrary.Core\obj\Debug\netcoreapp3.1\MovieLibrary.Core.csproj.CoreCompileInputs.cache
+D:\insys_task\src\MovieLibrary.Core\obj\Debug\netcoreapp3.1\MovieLibrary.Core.csproj.CopyComplete
+D:\insys_task\src\MovieLibrary.Core\obj\Debug\netcoreapp3.1\MovieLibrary.Core.dll
+D:\insys_task\src\MovieLibrary.Core\obj\Debug\netcoreapp3.1\MovieLibrary.Core.pdb

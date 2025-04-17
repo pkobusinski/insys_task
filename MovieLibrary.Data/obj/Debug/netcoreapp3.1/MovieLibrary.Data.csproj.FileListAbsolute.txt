@@ -1,0 +1,10 @@
+D:\insys_task\src\MovieLibrary.Data\bin\Debug\netcoreapp3.1\MovieLibrary.Data.deps.json
+D:\insys_task\src\MovieLibrary.Data\bin\Debug\netcoreapp3.1\MovieLibrary.Data.dll
+D:\insys_task\src\MovieLibrary.Data\bin\Debug\netcoreapp3.1\MovieLibrary.Data.pdb
+D:\insys_task\src\MovieLibrary.Data\obj\Debug\netcoreapp3.1\MovieLibrary.Data.csproj.AssemblyReference.cache
+D:\insys_task\src\MovieLibrary.Data\obj\Debug\netcoreapp3.1\MovieLibrary.Data.GeneratedMSBuildEditorConfig.editorconfig
+D:\insys_task\src\MovieLibrary.Data\obj\Debug\netcoreapp3.1\MovieLibrary.Data.AssemblyInfoInputs.cache
+D:\insys_task\src\MovieLibrary.Data\obj\Debug\netcoreapp3.1\MovieLibrary.Data.AssemblyInfo.cs
+D:\insys_task\src\MovieLibrary.Data\obj\Debug\netcoreapp3.1\MovieLibrary.Data.csproj.CoreCompileInputs.cache
+D:\insys_task\src\MovieLibrary.Data\obj\Debug\netcoreapp3.1\MovieLibrary.Data.dll
+D:\insys_task\src\MovieLibrary.Data\obj\Debug\netcoreapp3.1\MovieLibrary.Data.pdb
