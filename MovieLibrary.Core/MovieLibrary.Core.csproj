@@ -5,7 +5,7 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\MovieLibrary.Data\MovieLibrary.Data.csproj" />
+	  <ProjectReference Include="..\MovieLibrary.Data\MovieLibrary.Data.csproj" />
   </ItemGroup>
 
 </Project>

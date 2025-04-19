@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "DBL06TQoCG3o/mEPaskOn554tW63KEAUtH2zxaWsgoWlh1zg5zr6uXHHV2kOjjsAWzrid5deQAkUp0RPZyagfg==",
+  "dgSpecHash": "wjYDQdOgrA4l2luWiQjaSinAGov74TbzYOY0FLEi6iXm2PQAs6IegkGzGNXW0Qpfq7klQ7ohxnrg82eTs2fhCg==",
   "success": true,
   "projectFilePath": "D:\\insys_task\\src\\MovieLibrary.Data\\MovieLibrary.Data.csproj",
   "expectedPackageFiles": [
@@ -31,10 +31,7 @@
     "C:\\Users\\piotr\\.nuget\\packages\\system.diagnostics.diagnosticsource\\5.0.1\\system.diagnostics.diagnosticsource.5.0.1.nupkg.sha512",
     "C:\\Users\\piotr\\.nuget\\packages\\system.memory\\4.5.3\\system.memory.4.5.3.nupkg.sha512",
     "C:\\Users\\piotr\\.nuget\\packages\\system.text.encodings.web\\5.0.0\\system.text.encodings.web.5.0.0.nupkg.sha512",
-    "C:\\Users\\piotr\\.nuget\\packages\\system.text.json\\5.0.0\\system.text.json.5.0.0.nupkg.sha512",
-    "C:\\Users\\piotr\\.nuget\\packages\\microsoft.windowsdesktop.app.ref\\3.1.0\\microsoft.windowsdesktop.app.ref.3.1.0.nupkg.sha512",
-    "C:\\Users\\piotr\\.nuget\\packages\\microsoft.netcore.app.ref\\3.1.0\\microsoft.netcore.app.ref.3.1.0.nupkg.sha512",
-    "C:\\Users\\piotr\\.nuget\\packages\\microsoft.aspnetcore.app.ref\\3.1.10\\microsoft.aspnetcore.app.ref.3.1.10.nupkg.sha512"
+    "C:\\Users\\piotr\\.nuget\\packages\\system.text.json\\5.0.0\\system.text.json.5.0.0.nupkg.sha512"
   ],
   "logs": []
 }
