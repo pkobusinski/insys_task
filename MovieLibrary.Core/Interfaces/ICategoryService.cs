@@ -5,8 +5,8 @@ using MovieLibrary.Core.Models;
 
 namespace MovieLibrary.Core.Interfaces
 {
-    internal interface ICategoryService : IService<CategoryDto>
+    public interface ICategoryService : IService<CategoryDto>
     {
-
+        
     }
 }

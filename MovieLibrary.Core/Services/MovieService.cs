@@ -16,20 +16,19 @@ namespace MovieLibrary.Core.Services
         public MovieService(IMovieRepository movieRepository)
         {
             _movieRepository = movieRepository;
-
         }
 
         public IEnumerable<MovieDto> GetAll()
         {
             var movies = _movieRepository.GetAll();
-
             return movies.Select(movie => new MovieDto
             {
                 Id = movie.Id,
                 Title = movie.Title,
                 Description = movie.Description,
                 Year = movie.Year,
-                ImdbRating = movie.ImdbRating});
+                ImdbRating = movie.ImdbRating
+            });
         }
 
         public MovieDto GetById(int id)
@@ -37,7 +36,8 @@ namespace MovieLibrary.Core.Services
             var movie = _movieRepository.GetById(id);
             if (movie == null)
                 return null;
-            else return new MovieDto
+
+            return new MovieDto
             {
                 Id = movie.Id,
                 Title = movie.Title,
@@ -45,10 +45,9 @@ namespace MovieLibrary.Core.Services
                 Year = movie.Year,
                 ImdbRating = movie.ImdbRating
             };
-
         }
 
-        public void Create(MovieDto entity)
+        public MovieDto Create(MovieDto entity)
         {
             var movie = new Movie
             {
@@ -59,27 +58,36 @@ namespace MovieLibrary.Core.Services
             };
 
             _movieRepository.Add(movie);
-            entity.Id =movie.Id;
-           
+            entity.Id = movie.Id;
+
+            return entity; 
         }
 
-        public void Update(MovieDto entity)
+        public MovieDto Update(MovieDto entity)
         {
             var movie = _movieRepository.GetById(entity.Id);
+            if (movie == null)
+                return null;
 
             movie.Title = entity.Title;
             movie.Description = entity.Description;
             movie.Year = entity.Year;
-            
+            movie.ImdbRating = entity.ImdbRating; 
+
             _movieRepository.Update(movie);
 
+            return entity; 
         }
-        public void Delete(int id)
+
+        public bool Delete(int id)
         {
             var movie = _movieRepository.GetById(id);
+            if (movie == null)
+                return false;
+
             _movieRepository.Delete(movie.Id);
+            return true; 
         }
-
-
     }
 }
+

@@ -9,8 +9,8 @@ namespace MovieLibrary.Core.Interfaces
     {
         IEnumerable<T> GetAll();
         T GetById(int id);
-        void Create(T entity);
-        void Update(T entity);
-        void Delete(int id);
+        T Create(T entity);
+        T Update(T entity);
+        bool Delete(int id);
     }
 }

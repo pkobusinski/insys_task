@@ -16,9 +16,5 @@
     <ProjectReference Include="..\MovieLibrary.Core\MovieLibrary.Core.csproj" />
   </ItemGroup>
 
-  <ItemGroup>
-    <Folder Include="Controllers\" />
-  </ItemGroup>
-
 
 </Project>

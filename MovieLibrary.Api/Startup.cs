@@ -4,7 +4,11 @@ using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 using Microsoft.OpenApi.Models;
+using MovieLibrary.Core.Interfaces;
+using MovieLibrary.Core.Services;
 using MovieLibrary.Data;
+using MovieLibrary.Data.IRepositories;
+using MovieLibrary.Data.Repositories;
 
 namespace MovieLibrary.Api
 {
@@ -21,6 +25,12 @@ namespace MovieLibrary.Api
         {
             services.AddEntityFrameworkSqlite().AddDbContext<MovieLibraryContext>();
 
+            services.AddScoped<IMovieRepository, MovieRepository>();
+            services.AddScoped<ICategoryRepository, CategoryRepository>();
+
+            services.AddScoped<IMovieService, MovieService>();
+            services.AddScoped<ICategoryService, CategoryService>();
+
             services.AddControllers();
             services.AddSwaggerGen(options =>
             {
@@ -30,6 +40,7 @@ namespace MovieLibrary.Api
 
         public void Configure(IApplicationBuilder app, IWebHostEnvironment env)
         {
+           
             app.UseSwagger();
             app.UseSwaggerUI(c =>
             {
