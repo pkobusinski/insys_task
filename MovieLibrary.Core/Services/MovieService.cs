@@ -1,4 +1,5 @@
-﻿using System;
+﻿#nullable enable
+using System;
 using System.Collections.Generic;
 using System.Text;
 using MovieLibrary.Core.Interfaces;
@@ -27,7 +28,12 @@ namespace MovieLibrary.Core.Services
                 Title = movie.Title,
                 Description = movie.Description,
                 Year = movie.Year,
-                ImdbRating = movie.ImdbRating
+                ImdbRating = movie.ImdbRating,
+                Categories = movie.MovieCategories.Select(c => new CategoryDto
+                {
+                    Id = c.Category.Id,
+                    Name = c.Category.Name
+                }).ToList(),
             });
         }
 
@@ -43,7 +49,12 @@ namespace MovieLibrary.Core.Services
                 Title = movie.Title,
                 Description = movie.Description,
                 Year = movie.Year,
-                ImdbRating = movie.ImdbRating
+                ImdbRating = movie.ImdbRating,
+                Categories = movie.MovieCategories.Select(c => new CategoryDto
+                {
+                    Id= c.Category.Id,
+                    Name = c.Category.Name
+                }).ToList(),
             };
         }
 
@@ -87,6 +98,35 @@ namespace MovieLibrary.Core.Services
 
             _movieRepository.Delete(movie.Id);
             return true; 
+        }
+
+        public IEnumerable<MovieDto> FilterMovies( string? text = null, IEnumerable<int>? categoryIds = null, 
+            decimal? minImdb = null, decimal? maxImdb = null, int? page = 1, int? pageSize = 10)
+        {
+            
+            int currentPage = page ?? 1;  
+            int currentPageSize = pageSize ?? 10;
+
+            var movies = _movieRepository.FilterMovies(text, categoryIds, minImdb, maxImdb);
+
+            var pagedMovies = movies
+                .Skip((currentPage - 1) * currentPageSize)  
+                .Take(currentPageSize)              
+                .Select(movie => new MovieDto
+                {
+                    Id = movie.Id,
+                    Title = movie.Title,
+                    Description = movie.Description,
+                    Year = movie.Year,
+                    ImdbRating = movie.ImdbRating,
+                    Categories = movie.MovieCategories.Select(c => new CategoryDto
+                    {
+                        Id = c.Category.Id,
+                        Name = c.Category.Name
+                    }).ToList(),
+                }).ToList();
+
+            return pagedMovies;  
         }
     }
 }

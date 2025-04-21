@@ -12,5 +12,7 @@ namespace MovieLibrary.Core.Models
         public int Year { get; set; }
         public decimal ImdbRating { get; set; }
 
+        public List<CategoryDto> Categories { get; set; } = new List<CategoryDto>();
+
     }
 }

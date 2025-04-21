@@ -14,11 +14,11 @@ namespace MovieLibrary.Data.Repositories
         {
             _context = context;
         }
-        public IEnumerable<T> GetAll() { 
+        public virtual IEnumerable<T> GetAll() { 
             return _context.Set<T>().ToList();
         }
 
-        public T GetById(int id)
+        public virtual T GetById(int id)
         {
             return _context.Set<T>().Find(id);
         }
