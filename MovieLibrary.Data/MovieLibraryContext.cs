@@ -5,6 +5,9 @@ namespace MovieLibrary.Data
 {
     public class MovieLibraryContext : DbContext
     {
+        public MovieLibraryContext(DbContextOptions<MovieLibraryContext> options): base(options)
+        {
+        }
         public DbSet<Movie> Movies { get; set; }
 
         public DbSet<Category> Categories { get; set; }
@@ -13,7 +16,10 @@ namespace MovieLibrary.Data
 
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
         {
-            optionsBuilder.UseSqlite("Data Source=MovieLibrary.db");
+            if (!optionsBuilder.IsConfigured)
+            {
+                optionsBuilder.UseSqlite("Data Source=MovieLibrary.db");
+            }
         }
     }
 }

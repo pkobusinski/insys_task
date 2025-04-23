@@ -44,7 +44,7 @@ namespace MovieLibrary.Api.Controllers
 
         [HttpPut("{id}")]
         public ActionResult<MovieDto> UpdateMovie(int id, [FromBody] MovieDto movieDto) {
-            if (movieDto == null && id != movieDto.Id)
+            if (movieDto == null || id != movieDto.Id)
                 return BadRequest();
 
             var updatedMovie = _movieService.Update(movieDto);

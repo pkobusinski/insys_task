@@ -7,12 +7,15 @@ using MovieLibrary.Core.Models;
 using MovieLibrary.Data.IRepositories;
 using MovieLibrary.Data.Entities;
 using System.Linq;
+using MovieLibrary.Data;
 
 namespace MovieLibrary.Core.Services
 {
     public class MovieService : IMovieService
     {
         protected readonly IMovieRepository _movieRepository;
+
+        public MovieLibraryContext Context { get; }
 
         public MovieService(IMovieRepository movieRepository)
         {
@@ -104,8 +107,8 @@ namespace MovieLibrary.Core.Services
             decimal? minImdb = null, decimal? maxImdb = null, int? page = 1, int? pageSize = 10)
         {
             
-            int currentPage = page ?? 1;  
-            int currentPageSize = pageSize ?? 10;
+            int currentPage = page == null ? 1 : page.Value;
+            int currentPageSize = pageSize == null ? 10: pageSize.Value;
 
             var movies = _movieRepository.FilterMovies(text, categoryIds, minImdb, maxImdb);
 

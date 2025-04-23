@@ -1,0 +1,13 @@
+D:\insys_task\src\MovieLibrary.Data\bin\Debug\net7.0\MovieLibrary.Data.deps.json
+D:\insys_task\src\MovieLibrary.Data\bin\Debug\net7.0\MovieLibrary.Data.dll
+D:\insys_task\src\MovieLibrary.Data\bin\Debug\net7.0\MovieLibrary.Data.pdb
+D:\insys_task\src\MovieLibrary.Data\obj\Debug\net7.0\MovieLibrary.Data.csproj.AssemblyReference.cache
+D:\insys_task\src\MovieLibrary.Data\obj\Debug\net7.0\MovieLibrary.Data.GeneratedMSBuildEditorConfig.editorconfig
+D:\insys_task\src\MovieLibrary.Data\obj\Debug\net7.0\MovieLibrary.Data.AssemblyInfoInputs.cache
+D:\insys_task\src\MovieLibrary.Data\obj\Debug\net7.0\MovieLibrary.Data.AssemblyInfo.cs
+D:\insys_task\src\MovieLibrary.Data\obj\Debug\net7.0\MovieLibrary.Data.csproj.CoreCompileInputs.cache
+D:\insys_task\src\MovieLibrary.Data\obj\Debug\net7.0\MovieLibrary.Data.sourcelink.json
+D:\insys_task\src\MovieLibrary.Data\obj\Debug\net7.0\MovieLibrary.Data.dll
+D:\insys_task\src\MovieLibrary.Data\obj\Debug\net7.0\refint\MovieLibrary.Data.dll
+D:\insys_task\src\MovieLibrary.Data\obj\Debug\net7.0\MovieLibrary.Data.pdb
+D:\insys_task\src\MovieLibrary.Data\obj\Debug\net7.0\ref\MovieLibrary.Data.dll
